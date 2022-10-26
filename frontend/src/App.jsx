@@ -1,9 +1,12 @@
 import "./App.css";
+import Logo from "@components/header/logo/Logo";
+import Titre from "@components/header/titre/Titre";
 
 function App() {
   return (
-    <div className="App">
-      <p>coucou</p>
+    <div>
+      <Logo />
+      <Titre />
     </div>
   );
 }
