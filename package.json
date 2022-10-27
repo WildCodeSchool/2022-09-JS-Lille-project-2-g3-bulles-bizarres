@@ -19,7 +19,5 @@
     "concurrently": "^7.0.0",
     "husky": "^7.0.0"
   },
-  "dependencies": {
-    "styled-components": "^5.3.6"
-  }
+  "dependencies": {}
 }
