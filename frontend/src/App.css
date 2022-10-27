@@ -1,0 +1,25 @@
+.layout{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+  background-color: #111111;
+  color: #DAA622;
+  }
+  
+  .header { 
+    grid-area: 1 / 1 / 2 / 4;
+    text-align: center;
+    justify-items: center;
+   }
+  .main { 
+    grid-area: 2 / 1 / 5 / 4;
+    text-align: center;
+    justify-items: center;
+   }
+  .searchbtn { 
+    grid-area: 5 / 1 / 7 / 4;
+    text-align: center;
+    justify-items: center;
+   }
