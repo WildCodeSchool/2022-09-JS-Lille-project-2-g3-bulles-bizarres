@@ -9,6 +9,7 @@ button {
   font-family: "Bangers", cursive;
   border-radius: 8px;
   cursor: pointer;
+  border: none;
 }
 
 .ContainerButton {
@@ -24,11 +25,11 @@ button {
   }
 
   40% {
-    box-shadow: 0 0 0 14px rgba(247, 108, 108, 0);
+    box-shadow: 0 0 0 16px rgba(247, 108, 108, 0);
   }
 
   80% {
-    box-shadow: 0 0 0 19px rgba(247, 108, 108, 0);
+    box-shadow: 0 0 0 21px rgba(247, 108, 108, 0);
   }
 
   100% {
