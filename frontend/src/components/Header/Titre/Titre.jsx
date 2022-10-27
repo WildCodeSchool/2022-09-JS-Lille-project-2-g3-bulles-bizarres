@@ -4,7 +4,7 @@ import "./Titre.modules.css";
 function Titre() {
   return (
     <div>
-      <p className="title">RANDOMOVIE</p>
+      <h1 className="title">RANDOMOVIE</h1>
     </div>
   );
 }
