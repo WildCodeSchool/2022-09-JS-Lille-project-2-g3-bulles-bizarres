@@ -24,11 +24,11 @@ button {
   }
 
   40% {
-    box-shadow: 0 0 0 12px rgba(247, 108, 108, 0);
+    box-shadow: 0 0 0 14px rgba(247, 108, 108, 0);
   }
 
   80% {
-    box-shadow: 0 0 0 17px rgba(247, 108, 108, 0);
+    box-shadow: 0 0 0 19px rgba(247, 108, 108, 0);
   }
 
   100% {
