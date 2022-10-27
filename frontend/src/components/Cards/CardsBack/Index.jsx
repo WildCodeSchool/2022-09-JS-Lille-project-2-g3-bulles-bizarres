@@ -1,4 +1,3 @@
-// import Styled from 'styled-components';
 import "./style.css";
 
 export default function CardBack() {
