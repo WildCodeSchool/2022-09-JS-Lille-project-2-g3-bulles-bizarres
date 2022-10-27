@@ -1,3 +1,4 @@
+import "../../../services/reset.css";
 import "./style.css";
 
 export default function Card() {
@@ -10,18 +11,17 @@ export default function Card() {
           alt="Affiche Avengers Endgame"
         />
         <div className="description">
-          <h2>Avengers - Endgame</h2>
-          <h4>SYNOPSIS</h4>
+          <h1>Avengers - Endgame</h1>
+          <h2>SYNOPSIS</h2>
           <p className="paragraph">
             Thanos ayant anéanti la moitié de l’univers, les Avengers restants
             resserrent les rangs dans ce vingt-deuxième film des Studios Marvel,
             grande conclusion d’un des chapitres de l’Univers Cinématographique
             Marvel.
           </p>
-          <p className="paragraph">
-            <h4>REALISATION </h4> Anthony et Joe Russo
-          </p>
-          <h4>CASTING</h4>
+          <h2>REALISATION </h2>
+          <p className="paragraph">Anthony et Joe Russo</p>
+          <h2>CASTING</h2>
           <p className="paragraph">
             Robert Downey Jr. : Tony Stark / Iron Man. Chris Evans: Steve :
             Rogers / Captain America. Mark Ruffalo : Bruce Banner / Hulk. Chris
@@ -29,7 +29,11 @@ export default function Card() {
             Widow. Jeremy Renner : Clint Barton / Hawkeye.
           </p>
           <div className="trailer">
-            <img src="src/assets/bandeAnnonce.svg" alt="logoBandeAnnonce" />
+            <img
+              className="trailerLogo"
+              src="src/assets/bandeAnnonce.svg"
+              alt="logoBandeAnnonce"
+            />
             <p className="textTrailer">Bande Annonce</p>
           </div>
         </div>
