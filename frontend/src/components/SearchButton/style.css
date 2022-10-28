@@ -13,10 +13,10 @@ button {
 }
 
 .ContainerButton {
-  width: 16rem;
-  height: 10rem;
   border-radius: 8px;
   animation: animate 1.8s linear infinite;
+  width: 16rem;
+  height: 10rem;
 }
 
 @keyframes animate {
