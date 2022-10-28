@@ -34,7 +34,14 @@ export default function Card() {
               src="src/assets/bandeAnnonce.svg"
               alt="logoBandeAnnonce"
             />
-            <p className="textTrailer">Bande Annonce</p>
+            <a
+              className="textTrailer"
+              href="https://youtu.be/TcMBFSGVi1c"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Bande Annonce
+            </a>
           </div>
         </div>
       </div>

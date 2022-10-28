@@ -84,6 +84,10 @@ h2 {
 .textTrailer {
   align-self: center;
   margin-left: 0.5em;
+  color: #f2f39d;
+}
+.textTrailer:visited {
+  color: #f2f39d;
 }
 
 .trailerLogo {
