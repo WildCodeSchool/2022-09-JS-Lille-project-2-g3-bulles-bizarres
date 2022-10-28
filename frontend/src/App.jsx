@@ -1,3 +1,6 @@
+import Card from "@components/Cards/Card/Index";
+import CardBack from "@components/Cards/CardsBack/Index";
+
 import "./App.css";
 
 import Logo from "@components/Header/Logo/Logo";
@@ -6,6 +9,12 @@ import SearchButton from "@components/SearchButton";
 
 function App() {
   return (
+
+    <section className="caroussel">
+      <Card />
+      <CardBack />
+    </section>
+    
     <div className="App">
       <p>coucou</p>
 
