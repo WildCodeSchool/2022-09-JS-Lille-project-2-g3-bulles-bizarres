@@ -2,9 +2,10 @@ button {
   background-color: #111111;
   background-image: url("../../assets/searchbuttonimg.svg");
   background-size: 16rem 10rem;
+  background-repeat: no-repeat;
   width: 16rem;
   height: 10rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #daa622;
   font-family: "Bangers", cursive;
   border-radius: 8px;
