@@ -1,9 +1,8 @@
-import Card from "@components/Cards/Card/Index";
-import CardBack from "@components/Cards/CardsBack/Index";
+import Slideshow from "./components/Carrousel/Caroussel";
 
-import Logo from "@components/Header/Logo/Logo";
-import Titre from "@components/Header/Titre/Titre";
-import SearchButton from "@components/SearchButton";
+import Logo from "./components/Header/Logo/Logo";
+import Titre from "./components/Header/Titre/Titre";
+import SearchButton from "./components/SearchButton";
 import "./App.css";
 
 function App() {
@@ -14,10 +13,7 @@ function App() {
           <Logo />
           <Titre />
         </div>
-        <div className="caroussel">
-          <Card />
-          <CardBack />
-        </div>
+        <Slideshow />
         <div id="searchbtn">
           <SearchButton />
         </div>

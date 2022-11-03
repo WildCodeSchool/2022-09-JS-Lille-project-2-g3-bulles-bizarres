@@ -31,6 +31,7 @@
   text-align: center;
   justify-items: center;
   height: 15vh;
+  padding-top: 1rem;
 }
 
 #searchbtn {
@@ -41,4 +42,5 @@
   justify-content: center;
   height: 17vh;
   background-color: #111111;
+  padding-top: 5rem;
 }

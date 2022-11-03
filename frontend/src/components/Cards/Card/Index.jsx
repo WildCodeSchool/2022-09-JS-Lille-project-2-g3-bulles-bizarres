@@ -1,10 +1,11 @@
 import "../../../services/reset.css";
 import "./style.css";
 
-export default function Card() {
+// eslint-disable-next-line react/prop-types
+export default function Card({ hoverable }) {
   return (
     <section className="frontImage">
-      <div className="card">
+      <div className={`card ${hoverable ? "hoverable" : ""}`}>
         <img
           className="poster"
           src="/src/assets/avengers.jpg"
