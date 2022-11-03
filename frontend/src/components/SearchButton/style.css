@@ -1,4 +1,4 @@
-button {
+.searchBtn {
   background-color: #111111;
   background-image: url("../../assets/searchbuttonimg.svg");
   background-size: 16rem 10rem;

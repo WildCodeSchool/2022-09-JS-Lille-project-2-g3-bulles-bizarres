@@ -1,32 +1,20 @@
 import "./style.css";
+import PropTypes from "prop-types";
 
-export default function Card() {
+export default function Card({ title, overview, rated }) {
   return (
     <section className="frontImage">
       <div className="card">
         <img
           className="poster"
-          src="/src/assets/avengers.jpg"
+          src="/src/assets/avengers.jpg" /* {poster} */
           alt="Affiche Avengers Endgame"
         />
         <div className="description">
-          <h1>Avengers - Endgame</h1>
-          <h2>SYNOPSIS</h2>
-          <p className="paragraph">
-            Thanos ayant anéanti la moitié de l’univers, les Avengers restants
-            resserrent les rangs dans ce vingt-deuxième film des Studios Marvel,
-            grande conclusion d’un des chapitres de l’Univers Cinématographique
-            Marvel.
-          </p>
-          <h2>REALISATION </h2>
-          <p className="paragraph">Anthony et Joe Russo</p>
-          <h2>CASTING</h2>
-          <p className="paragraph">
-            Robert Downey Jr. : Tony Stark / Iron Man. Chris Evans: Steve :
-            Rogers / Captain America. Mark Ruffalo : Bruce Banner / Hulk. Chris
-            Hemsworth : Thor. Scarlett Johansson : Natasha Romanoff / Black
-            Widow. Jeremy Renner : Clint Barton / Hawkeye.
-          </p>
+          <h1>{title}</h1>
+          <h2>Overview</h2>
+          <p className="paragraph">{overview}</p>
+          <p className="rated">{rated}</p>
           <div className="trailer">
             <img
               className="trailerLogo"
@@ -47,3 +35,9 @@ export default function Card() {
     </section>
   );
 }
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  overview: PropTypes.string.isRequired,
+  rated: PropTypes.number.isRequired,
+};
