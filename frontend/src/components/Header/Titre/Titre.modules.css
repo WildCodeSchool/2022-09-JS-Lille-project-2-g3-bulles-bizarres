@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #daa622;
+  letter-spacing: 0.3rem;
+  font-family: "Bangers", cursive;
+}
