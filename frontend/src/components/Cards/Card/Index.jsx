@@ -1,6 +1,7 @@
+import "../../../services/reset.css";
+import PropTypes from "prop-types";
 import "./style.css";
 
-// eslint-disable-next-line react/prop-types
 export default function Card({ hoverable }) {
   return (
     <section className="frontImage">
@@ -34,17 +35,14 @@ export default function Card({ hoverable }) {
               src="src/assets/bandeAnnonce.svg"
               alt="logoBandeAnnonce"
             />
-            <a
-              className="textTrailer"
-              href="https://youtu.be/TcMBFSGVi1c"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Bande Annonce
-            </a>
+            <p className="textTrailer">Bande Annonce</p>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+Card.propTypes = {
+  hoverable: PropTypes.number.isRequired,
+};
