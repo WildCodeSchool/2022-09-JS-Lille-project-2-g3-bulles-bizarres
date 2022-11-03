@@ -13,7 +13,9 @@ function App() {
           <Logo />
           <Titre />
         </div>
+        <div className= "Caroussel">
         <Slideshow />
+        </div>
         <div id="searchbtn">
           <SearchButton />
         </div>
