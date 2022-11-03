@@ -1,4 +1,4 @@
-import "@components/SearchButton/style.css";
+import "./style.css";
 
 export default function SearchButton() {
   return (
