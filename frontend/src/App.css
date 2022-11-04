@@ -14,7 +14,7 @@
   align-items: center;
   z-index: 15;
   grid-area: 2 / 1 / 5 / 4;
-} 
+}
 
 .layout {
   grid-template-columns: repeat(3, 1fr);

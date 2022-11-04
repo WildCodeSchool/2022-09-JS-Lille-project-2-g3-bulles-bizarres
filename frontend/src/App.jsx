@@ -1,9 +1,8 @@
+import Gallery from "@components/Gallery/Gallery";
 import Logo from "./components/Header/Logo/Logo";
 import Titre from "./components/Header/Titre/Titre";
 import SearchButton from "./components/SearchButton";
 import "./App.css";
-import Carousel from "./components/Carousel/Carousel";
-import Gallery from "@components/Gallery/Gallery";
 
 function App() {
   return (
