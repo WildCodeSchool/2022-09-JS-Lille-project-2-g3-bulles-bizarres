@@ -3,6 +3,7 @@ import Titre from "./components/Header/Titre/Titre";
 import SearchButton from "./components/SearchButton";
 import "./App.css";
 import Carousel from "./components/Carousel/Carousel";
+import Gallery from "@components/Gallery/Gallery";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
           <Logo />
           <Titre />
         </div>
-        <div className="Caroussel">
-          <Carousel />
+        <div className="Gallery">
+          <Gallery />
         </div>
         <div id="searchbtn">
           <SearchButton />
