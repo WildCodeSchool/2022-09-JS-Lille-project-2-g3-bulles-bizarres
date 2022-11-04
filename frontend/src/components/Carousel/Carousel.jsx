@@ -4,38 +4,37 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-// eslint-disable-next-line import/no-unresolved
-import Card from "@components/Cards/Card/Index";
+/* eslint-enable import/no-unresolved */
+import Card from "@components/Cards/Card";
 
-import SCarousel from "./style";
+import "./style.css";
 
 export default function Carousel() {
   return (
-    <SCarousel>
-      <Swiper
-        modules={[EffectCoverflow]}
-        slidesPerView={2}
-        navigation
-        grabCursor="true"
-        centeredSlides="true"
-        loop="true"
-        coverflowEffect={{
-          rotate: 30,
-          stretch: 25,
-          depth: 250,
-        }}
-        effect="coverflow"
-      >
-        <SwiperSlide>
-          {({ isActive }) => <Card hoverable={isActive} />}
-        </SwiperSlide>
-        <SwiperSlide>
-          {({ isActive }) => <Card hoverable={isActive} />}
-        </SwiperSlide>
-        <SwiperSlide>
-          {({ isActive }) => <Card hoverable={isActive} />}
-        </SwiperSlide>
-      </Swiper>
-    </SCarousel>
+    <Swiper
+      className="carousel"
+      modules={[EffectCoverflow]}
+      slidesPerView={2}
+      navigation
+      grabCursor="true"
+      centeredSlides="true"
+      loop="true"
+      coverflowEffect={{
+        rotate: 30,
+        stretch: 25,
+        depth: 250,
+      }}
+      effect="coverflow"
+    >
+      <SwiperSlide>
+        {({ isActive }) => <Card hoverable={isActive} />}
+      </SwiperSlide>
+      <SwiperSlide>
+        {({ isActive }) => <Card hoverable={isActive} />}
+      </SwiperSlide>
+      <SwiperSlide>
+        {({ isActive }) => <Card hoverable={isActive} />}
+      </SwiperSlide>
+    </Swiper>
   );
 }
