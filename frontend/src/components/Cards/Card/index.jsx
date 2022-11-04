@@ -1,9 +1,11 @@
+import "../../../services/reset.css";
+import PropTypes from "prop-types";
 import "./style.css";
 
-export default function Card() {
+export default function Card({ hoverable }) {
   return (
     <section className="frontImage">
-      <div className="card">
+      <div className={`card ${hoverable ? "hoverable" : ""}`}>
         <img
           className="poster"
           src="/src/assets/avengers.jpg"
@@ -33,17 +35,14 @@ export default function Card() {
               src="src/assets/bandeAnnonce.svg"
               alt="logoBandeAnnonce"
             />
-            <a
-              className="textTrailer"
-              href="https://youtu.be/TcMBFSGVi1c"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Bande Annonce
-            </a>
+            <p className="textTrailer">Bande Annonce</p>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+Card.propTypes = {
+  hoverable: PropTypes.bool.isRequired,
+};

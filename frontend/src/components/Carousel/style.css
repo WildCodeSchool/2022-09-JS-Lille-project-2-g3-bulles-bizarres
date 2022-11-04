@@ -1,0 +1,16 @@
+.carousel {  
+  padding-top: 4em;
+  position: relative;
+  z-index: 20;
+}
+.carousel .swiper {
+  overflow: inherit;
+}
+
+.carousel .slide {
+   overflow: hidden;
+  
+}
+.carousel .slide > img {
+  width: 100%;
+}
