@@ -11,12 +11,12 @@ function App() {
         <div className="header">
           <Logo />
           <Titre />
-        </div>
-        <div className="Caroussel">
-          <Carousel />
-        </div>
-        <div id="searchbtn">
-          <SearchButton />
+          <div className="Carousel">
+            <Carousel />
+          </div>
+          <div id="searchbtn">
+            <SearchButton />
+          </div>
         </div>
       </div>
     </div>
