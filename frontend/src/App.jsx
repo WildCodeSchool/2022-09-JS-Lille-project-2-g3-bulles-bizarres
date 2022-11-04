@@ -1,25 +1,33 @@
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Logo from "./components/Header/Logo/Logo";
 import Titre from "./components/Header/Titre/Titre";
 import SearchButton from "./components/SearchButton";
 import "./App.css";
-import Carousel from "./components/Carousel/Carousel";
+import MobileForm from "./pages/MobileForm";
+import MobileResponse from "./pages/MobileResponse";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <div className="layout">
-        <div className="header">
-          <Logo />
-          <Titre />
-        </div>
-        <div className="Caroussel">
-          <Carousel />
-        </div>
-        <div id="searchbtn">
-          <SearchButton />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/MobileForm" element={<MobileForm />} />
+        <Route path="/MobileResponse" element={<MobileResponse />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      <div className="App">
+        <div className="layout">
+          <div className="header">
+            <Logo />
+            <Titre />
+          </div>
+          <div id="searchbtn">
+            <SearchButton />
+          </div>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
