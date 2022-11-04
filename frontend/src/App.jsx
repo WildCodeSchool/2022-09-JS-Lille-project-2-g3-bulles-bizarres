@@ -3,7 +3,7 @@ import Logo from "@components/Header/Logo/Logo";
 import Titre from "@components/Header/Titre/Titre";
 import SearchButton from "@components/SearchButton";
 import axios from "axios";
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./App.css";
 
@@ -19,6 +19,13 @@ function App() {
         setMovies(data.results);
       });
   };
+  useEffect(() => {
+    getMovies();
+  }, []);
+
+  const filter18 = movies.filter((movie) => {
+    return !movie.genre_ids.includes(27);
+  });
 
   return (
     <div className="App">
@@ -28,7 +35,7 @@ function App() {
           <Titre />
         </div>
         <div className="caroussel">
-          {movies.map((movie) => (
+          {filter18.map((movie) => (
             <Card
               title={movie.title}
               overview={movie.overview}
@@ -37,9 +44,6 @@ function App() {
             />
           ))}
         </div>
-        <button className="getMovie" type="button" onClick={getMovies}>
-          Get Movie
-        </button>
         <div id="searchbtn">
           <SearchButton />
         </div>
