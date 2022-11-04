@@ -1,9 +1,8 @@
-import Slideshow from "./components/Carrousel/Caroussel";
-
 import Logo from "./components/Header/Logo/Logo";
 import Titre from "./components/Header/Titre/Titre";
 import SearchButton from "./components/SearchButton";
 import "./App.css";
+import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   return (
@@ -13,8 +12,8 @@ function App() {
           <Logo />
           <Titre />
         </div>
-        <div className= "Caroussel">
-        <Slideshow />
+        <div className="Caroussel">
+          <Carousel />
         </div>
         <div id="searchbtn">
           <SearchButton />

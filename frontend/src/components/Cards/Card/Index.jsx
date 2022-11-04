@@ -44,5 +44,5 @@ export default function Card({ hoverable }) {
 }
 
 Card.propTypes = {
-  hoverable: PropTypes.number.isRequired,
+  hoverable: PropTypes.bool.isRequired,
 };

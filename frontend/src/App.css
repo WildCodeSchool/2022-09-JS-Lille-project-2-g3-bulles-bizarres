@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.caroussel {
+.carousel {
   height: 60vh;
   width: 100%;
   display: flex;
@@ -14,10 +14,9 @@
   align-items: center;
   z-index: 15;
   grid-area: 2 / 1 / 5 / 4;
-}
+} 
 
 .layout {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
@@ -42,5 +41,5 @@
   justify-content: center;
   height: 17vh;
   background-color: #111111;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
