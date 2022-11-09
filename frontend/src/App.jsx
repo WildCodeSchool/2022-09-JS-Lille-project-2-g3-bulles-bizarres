@@ -21,7 +21,9 @@ function App() {
           <div className="header">
             <Logo />
             <Titre />
-          </div>
+          <div className="Carousel">
+            <Carousel />
+            </div>
           <div id="searchbtn">
             <SearchButton />
           </div>
