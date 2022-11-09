@@ -12,20 +12,21 @@ function App() {
   const getMovies = () => {
     axios
       .get(
-        "https://api.themoviedb.org/3/movie/popular?api_key=f352c00b6a6dc4de283669f3f964df1a&language=en-US&page=1"
+        `https://api.themoviedb.org/3/movie/popular?api_key=${
+          import.meta.env.VITE_SECRET_API_KEY
+        }&language=en-US&page=1`
       )
-      .then((response) => response.data)
-      .then((data) => {
-        setMovies(data.results);
+      .then(({ data }) => {
+        setMovies(
+          data.results.filter((movie) => {
+            return !movie.genre_ids.includes(27);
+          })
+        );
       });
   };
   useEffect(() => {
     getMovies();
   }, []);
-
-  const filter18 = movies.filter((movie) => {
-    return !movie.genre_ids.includes(27);
-  });
 
   return (
     <div className="App">
@@ -35,7 +36,7 @@ function App() {
           <Titre />
         </div>
         <div className="caroussel">
-          {filter18.map((movie) => (
+          {movies.map((movie) => (
             <Card
               title={movie.title}
               overview={movie.overview}
