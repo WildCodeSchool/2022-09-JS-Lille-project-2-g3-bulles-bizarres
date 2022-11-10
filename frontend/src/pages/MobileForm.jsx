@@ -1,8 +1,5 @@
 import React from "react";
 
-const MobileForm = () => {
-  return;
-  <div />;
-};
-
-export default MobileForm;
+export default function MobileForm() {
+  return <div />;
+}

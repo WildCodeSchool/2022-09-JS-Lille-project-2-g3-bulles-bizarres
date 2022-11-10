@@ -1,7 +1,8 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Carousel from "./components/Carousel/Carousel";
 import Logo from "./components/Header/Logo/Logo";
 import Titre from "./components/Header/Titre/Titre";
-import SearchButton from "./components/SearchButton";
+import SearchButton from "./components/SearchButton/index";
 import "./App.css";
 import MobileForm from "./pages/MobileForm";
 import MobileResponse from "./pages/MobileResponse";
@@ -21,11 +22,12 @@ function App() {
           <div className="header">
             <Logo />
             <Titre />
-          <div className="Carousel">
-            <Carousel />
+            <div className="Carousel">
+              <Carousel />
             </div>
-          <div id="searchbtn">
-            <SearchButton />
+            <div id="searchbtn">
+              <SearchButton />
+            </div>
           </div>
         </div>
       </div>

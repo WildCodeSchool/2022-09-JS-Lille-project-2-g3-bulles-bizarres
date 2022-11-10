@@ -1,7 +1,5 @@
 import React from "react";
 
-const MobileResponse = () => {
-  return <div></div>;
-};
-
-export default MobileResponse;
+export default function MobileResponse() {
+  return <div />;
+}
