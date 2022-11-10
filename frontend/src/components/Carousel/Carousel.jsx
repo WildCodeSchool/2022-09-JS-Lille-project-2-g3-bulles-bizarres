@@ -33,7 +33,6 @@ export default function Carousel() {
   }, []);
   return (
     <Swiper
-      className="carousel"
       modules={[EffectCoverflow]}
       slidesPerView={2}
       navigation
@@ -49,13 +48,15 @@ export default function Carousel() {
     >
       {movies.map((movie) => (
         <SwiperSlide>
-          <Card
-            title={movie.title}
-            overview={movie.overview}
-            poster={movie.poster}
-            rated={movie.vote_average}
-            hoverable={false}
-          />
+          {({ isActive }) => (
+            <Card
+              title={movie.title}
+              overview={movie.overview}
+              poster={movie.poster}
+              rated={movie.vote_average}
+              hoverable={isActive}
+            />
+          )}
         </SwiperSlide>
       ))}
     </Swiper>

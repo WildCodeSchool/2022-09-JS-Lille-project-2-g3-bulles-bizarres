@@ -3,7 +3,7 @@ import "./style.css";
 export default function SearchButton() {
   return (
     <div className="ContainerButton">
-      <button type="button">
+      <button className="searchBtn" type="button">
         Something <br />
         else ?
       </button>

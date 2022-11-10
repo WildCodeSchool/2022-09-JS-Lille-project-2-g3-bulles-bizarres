@@ -1,4 +1,4 @@
-.carousel {  
+.carousel {
   padding-top: 4em;
   position: relative;
   z-index: 20;
@@ -8,8 +8,7 @@
 }
 
 .carousel .slide {
-   overflow: hidden;
-  
+  overflow: hidden;
 }
 .carousel .slide > img {
   width: 100%;
