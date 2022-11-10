@@ -1,55 +1,37 @@
-import Card from "@components/Cards/Card/Index";
-import Logo from "@components/Header/Logo/Logo";
-import Titre from "@components/Header/Titre/Titre";
-import SearchButton from "@components/SearchButton";
-import axios from "axios";
-import React, { useEffect } from "react";
-
+import Carousel from "@components/Carousel/Carousel";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Logo from "./components/Header/Logo/Logo";
+import Titre from "./components/Header/Titre/Titre";
+import SearchButton from "./components/SearchButton";
 import "./App.css";
+import MobileForm from "./pages/MobileForm";
+import MobileResponse from "./pages/MobileResponse";
+import Home from "./pages/Home";
 
 function App() {
-  const [movies, setMovies] = React.useState([]);
-  const getMovies = () => {
-    axios
-      .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${
-          import.meta.env.VITE_SECRET_API_KEY
-        }&language=en-US&page=1`
-      )
-      .then(({ data }) => {
-        setMovies(
-          data.results.filter((movie) => {
-            return !movie.genre_ids.includes(27);
-          })
-        );
-      });
-  };
-  useEffect(() => {
-    getMovies();
-  }, []);
-
   return (
-    <div className="App">
-      <div className="layout">
-        <div className="header">
-          <Logo />
-          <Titre />
-        </div>
-        <div className="caroussel">
-          {movies.map((movie) => (
-            <Card
-              title={movie.title}
-              overview={movie.overview}
-              poster={movie.poster}
-              rated={movie.vote_average}
-            />
-          ))}
-        </div>
-        <div id="searchbtn">
-          <SearchButton />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/MobileForm" element={<MobileForm />} />
+        <Route path="/MobileResponse" element={<MobileResponse />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      <div className="App">
+        <div className="layout">
+          <div className="header">
+            <Logo />
+            <Titre />
+            <div className="Carousel">
+              <Carousel />
+            </div>
+            <div id="searchbtn">
+              <SearchButton />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
