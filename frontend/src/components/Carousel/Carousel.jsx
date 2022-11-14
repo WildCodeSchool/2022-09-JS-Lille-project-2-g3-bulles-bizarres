@@ -45,6 +45,7 @@ export default function Carousel() {
         depth: 250,
       }}
       effect="coverflow"
+      initialSlide={3}
     >
       {movies.map((movie) => (
         <SwiperSlide>
