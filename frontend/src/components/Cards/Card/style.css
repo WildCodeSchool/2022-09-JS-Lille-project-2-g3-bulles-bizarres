@@ -1,10 +1,5 @@
-.frontImage {
-  display: flex;
+.poster {
   justify-content: center;
-}
-
-.frontImage img {
-  position: relative;
 }
 
 .card {
