@@ -10,7 +10,6 @@
 .card {
   display: flex;
   justify-content: center;
-
   height: 25em;
   width: 15em;
   overflow: hidden;
@@ -55,7 +54,7 @@
   }
 }
 
-.paragraph {
+.rated {
   margin-top: 0.5em;
   margin-bottom: 1em;
 }

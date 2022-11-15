@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.caroussel {
+.carousel {
   height: 60vh;
   width: 100%;
   display: flex;
@@ -42,5 +42,5 @@
   justify-content: center;
   height: 17vh;
   background-color: #111111;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
