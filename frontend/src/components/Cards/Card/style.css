@@ -1,5 +1,4 @@
 .frontImage {
-  position: absolute;
   display: flex;
   justify-content: center;
 }
@@ -11,7 +10,6 @@
 .card {
   display: flex;
   justify-content: center;
-
   height: 25em;
   width: 15em;
   overflow: hidden;
@@ -19,7 +17,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.card:hover {
+.card.hoverable:hover {
   animation-name: click;
 
   animation-duration: 2s;
@@ -29,7 +27,7 @@
   animation-fill-mode: forwards;
 }
 
-.card:hover .poster {
+.card.hoverable:hover .poster {
   filter: brightness(40%);
 }
 
@@ -40,7 +38,7 @@
   opacity: 0;
 }
 
-.card:hover .description {
+.card.hoverable:hover .description {
   opacity: 1;
   inset: 10px;
 }
@@ -56,7 +54,7 @@
   }
 }
 
-.paragraph {
+.rated {
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
