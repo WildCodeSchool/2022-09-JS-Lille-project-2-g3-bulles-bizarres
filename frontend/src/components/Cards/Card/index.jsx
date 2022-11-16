@@ -12,17 +12,26 @@ export default function Card({ title, overview, rated, hoverable }) {
           alt="Affiche Avengers Endgame"
         />
         <div className="description">
-          <h1>{title}</h1>
-          <h2>Overview</h2>
-          <p className="paragraph">{overview}</p>
-          <p className="rated">{rated}</p>
+          <div className="rated slide-bottom">
+            <img
+              className="ratedStar"
+              src="src/assets/ratedStar.svg"
+              alt="Rated Star"
+            />
+            <p className="ratedText">{rated}</p>
+          </div>
+          <div className="content">
+            <h1 className="titleMovie">{title}</h1>
+            {/* <h2 className="overview">Overview</h2> */}
+            <p className="paragraph">{overview}</p>
+          </div>
           <div className="trailer">
             <img
-              className="trailerLogo"
+              className="trailerLogo pulse"
               src="src/assets/bandeAnnonce.svg"
               alt="logoBandeAnnonce"
             />
-            <p className="textTrailer">Bande Annonce</p>
+            <p className="trailerText ">Bande Annonce</p>
           </div>
         </div>
       </div>
