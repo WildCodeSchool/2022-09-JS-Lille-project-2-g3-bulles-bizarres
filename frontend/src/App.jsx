@@ -1,3 +1,4 @@
+import Gallery from "@components/Gallery/Gallery";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Carousel from "./components/Carousel/Carousel";
 import Logo from "./components/Header/Logo/Logo";
@@ -27,11 +28,15 @@ function App() {
             <div className="Carousel">
               <Carousel />
             </div>
+   <div className="Gallery">
+          <Gallery />
+        </div>
             <div id="searchbtn">
               <SearchButton />
             </div>
              <Form />
           </div>
+
         </div>
 
       
