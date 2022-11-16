@@ -31,7 +31,7 @@ export default function Card({ title, overview, rated, hoverable }) {
               src="src/assets/bandeAnnonce.svg"
               alt="logoBandeAnnonce"
             />
-            <p className="trailerText ">Bande Annonce</p>
+            <p className="trailerText ">Trailer</p>
           </div>
         </div>
       </div>
