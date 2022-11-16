@@ -22,7 +22,6 @@ export default function Card({ title, overview, rated, hoverable }) {
           </div>
           <div className="content">
             <h1 className="titleMovie">{title}</h1>
-            {/* <h2 className="overview">Overview</h2> */}
             <p className="paragraph">{overview}</p>
           </div>
           <div className="trailer">

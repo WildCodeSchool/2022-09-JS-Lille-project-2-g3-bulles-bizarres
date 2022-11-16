@@ -74,19 +74,12 @@
 
 .titleMovie {
   font-size: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-align: center;
   color: #daa622;
   font-family: "Bangers", cursive;
   letter-spacing: 0.1rem;
 }
-
-/* .overview {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-weight: bold;
-  font-size: 1em;
-} */
 
 .paragraph {
   font-size: 0.9em;
@@ -127,11 +120,6 @@
 }
 
 .pulse {
-  display: inline-block;
-
-  /* @include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias(); */
   animation-name: pulse;
   animation-duration: 1.5s;
   animation-timing-function: linear;
