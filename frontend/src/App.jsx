@@ -8,6 +8,7 @@ import "./App.css";
 import MobileForm from "./pages/MobileForm";
 import MobileResponse from "./pages/MobileResponse";
 import Home from "./pages/Home";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -33,8 +34,12 @@ function App() {
             <div id="searchbtn">
               <SearchButton />
             </div>
+             <Form />
+          </div>
+
         </div>
-      </div>
+
+      
     </BrowserRouter>
   );
 }
