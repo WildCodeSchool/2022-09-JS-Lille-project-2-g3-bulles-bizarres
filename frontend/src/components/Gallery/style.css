@@ -1,10 +1,15 @@
-.Gallery {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  align-items: center;
-  justify-content: center;
+.gallery .card {
+  height: 25vh;
+  width: 30vw;
+  border-radius: 20px;
+}
+
+.gallery {
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+  gap: 0.5rem;
+  height: 60vh;
+  padding-top: 1rem;
 }
