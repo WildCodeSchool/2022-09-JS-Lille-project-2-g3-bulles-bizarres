@@ -2,45 +2,40 @@
   margin: 0;
   padding: 0;
 }
-.App {
-  height: 100vh;
-}
 
-.carousel {
+.main {
+  padding-top: 5rem;
   height: 60vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 15;
-  grid-area: 2 / 1 / 5 / 4;
+  background-color: #111111;
 }
 
-.layout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 0px;
+/* .layout {
+  display: flex;
+  flex-direction: column;
   background-color: #111111;
   color: #daa622;
   height: 100vh;
-}
+} */
 
 .header {
-  grid-area: 1 / 1 / 2 / 4;
+  background-color: #111111;
   text-align: center;
   justify-items: center;
-  height: 15vh;
-  padding-top: 1rem;
 }
 
 #searchbtn {
-  grid-area: 5 / 1 / 7 / 4;
   display: flex;
   text-align: center;
   justify-items: center;
   justify-content: center;
-  height: 17vh;
+  height: 25vh;
   background-color: #111111;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.layoutGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

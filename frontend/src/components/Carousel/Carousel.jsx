@@ -48,7 +48,7 @@ export default function Carousel() {
       initialSlide={3}
     >
       {movies.map((movie) => (
-        <SwiperSlide>
+        <SwiperSlide key={movie.id}>
           {({ isActive }) => (
             <Card
               title={movie.title}
