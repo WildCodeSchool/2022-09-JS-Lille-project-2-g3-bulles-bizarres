@@ -1,11 +1,16 @@
+// eslint-disable-next-line import/no-unresolved
 import Carousel from "@components/Carousel/Carousel";
+// eslint-disable-next-line import/no-unresolved
 import Logo from "@components/Header/Logo/Logo";
+// eslint-disable-next-line import/no-unresolved
 import Titre from "@components/Header/Titre/Titre";
+// eslint-disable-next-line import/no-unresolved
 import SearchButton from "@components/SearchButton";
+import "./home.css";
 
 export default function Home() {
   return (
-    <div className="layout">
+    <>
       <header className="header">
         <Logo />
         <Titre />
@@ -16,6 +21,6 @@ export default function Home() {
       <div id="searchbtn">
         <SearchButton />
       </div>
-    </div>
+    </>
   );
 }

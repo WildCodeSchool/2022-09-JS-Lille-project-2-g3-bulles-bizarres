@@ -1,0 +1,20 @@
+.main {
+  padding-top: 5rem;
+  height: 60vh;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  justify-items: center;
+  padding-top: 1em;
+}
+
+#searchbtn {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  height: 25vh;
+  padding-bottom: 2rem;
+}

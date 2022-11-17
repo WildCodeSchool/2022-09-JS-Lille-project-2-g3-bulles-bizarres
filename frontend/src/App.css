@@ -1,41 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.main {
-  padding-top: 5rem;
-  height: 60vh;
-  width: 100%;
+:root {
   background-color: #111111;
 }
 
-/* .layout {
-  display: flex;
-  flex-direction: column;
-  background-color: #111111;
-  color: #daa622;
-  height: 100vh;
-} */
-
-.header {
-  background-color: #111111;
-  text-align: center;
-  justify-items: center;
-}
-
-#searchbtn {
-  display: flex;
-  text-align: center;
-  justify-items: center;
-  justify-content: center;
-  height: 25vh;
-  background-color: #111111;
-  padding-bottom: 2rem;
-}
-
-.layoutGallery {
+/* .layoutGallery {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
