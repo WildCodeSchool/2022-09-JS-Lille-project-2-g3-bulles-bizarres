@@ -1,4 +1,3 @@
-
 .home-button {
   background-color: #111111;
   background-image: url("../../assets/searchbuttonimgv2.svg");
@@ -18,6 +17,10 @@
   animation: animate 1.8s linear infinite;
   width: 16rem;
   height: 11rem;
+}
+.searchbtn {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes animate {

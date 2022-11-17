@@ -10,11 +10,16 @@
   padding-top: 1em;
 }
 
-#searchbtn {
+.searchbtn {
   display: flex;
   text-align: center;
   justify-items: center;
   justify-content: center;
   height: 25vh;
   padding-bottom: 2rem;
+}
+
+.homeLayout {
+  display: flex;
+  justify-content: space-between;
 }
