@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-/* eslint-disable import/no-unresolved */
-/* eslint-enable import/no-unresolved */
 import Card from "@components/Cards/Card";
 import "./style.css";
 
