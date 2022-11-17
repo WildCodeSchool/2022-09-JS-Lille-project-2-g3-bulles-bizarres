@@ -1,10 +1,14 @@
-.Gallery {
+.gallery .card {
+  height: 15rem;
+  width: 8rem;
+  border-radius: 5px;
+}
+
+.gallery {
   display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  background-color: #111111;
+  gap: 1rem;
 }

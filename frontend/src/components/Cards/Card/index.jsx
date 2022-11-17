@@ -2,14 +2,14 @@ import "../../../services/reset.css";
 import PropTypes from "prop-types";
 import "./style.css";
 
-export default function Card({ title, overview, rated, hoverable }) {
+export default function Card({ title, overview, rated, hoverable, poster }) {
   return (
     <section className="frontImage">
       <div className={`card ${hoverable ? "hoverable" : ""}`}>
         <img
           className="poster"
-          src="/src/assets/avengers.jpg" /* {poster} */
-          alt="Affiche Avengers Endgame"
+          src={`https://image.tmdb.org/t/p/original/${poster}`}
+          alt={`Affiche ${title}`}
         />
         <div className="description">
           <h1>{title}</h1>
@@ -35,4 +35,5 @@ Card.propTypes = {
   overview: PropTypes.string.isRequired,
   rated: PropTypes.number.isRequired,
   hoverable: PropTypes.bool.isRequired,
+  poster: PropTypes.string.isRequired,
 };
