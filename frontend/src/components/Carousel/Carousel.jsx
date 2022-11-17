@@ -53,7 +53,7 @@ export default function Carousel() {
             <Card
               title={movie.title}
               overview={movie.overview}
-              poster={movie.poster}
+              poster={movie.poster_path}
               rated={movie.vote_average}
               hoverable={isActive}
             />
