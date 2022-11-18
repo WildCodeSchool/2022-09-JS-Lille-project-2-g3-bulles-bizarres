@@ -7,7 +7,7 @@ import SearchButton from "@components/SearchButton";
 
 export default function Home() {
   return (
-    <>
+    <body className="homeLayout">
       <header className="header">
         <Logo />
         <Titre />
@@ -15,9 +15,9 @@ export default function Home() {
       <section className="main">
         <Carousel />
       </section>
-      <div id="searchbtn">
+      <section className="searchbtn">
         <SearchButton />
-      </div>
-    </>
+      </section>
+    </body>
   );
 }
