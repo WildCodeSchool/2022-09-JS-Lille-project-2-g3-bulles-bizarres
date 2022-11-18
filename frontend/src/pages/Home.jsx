@@ -15,7 +15,7 @@ export default function Home() {
       <section className="main">
         <Carousel />
       </section>
-      <div id="searchbtn">
+      <div className="searchbtn">
         <SearchButton />
       </div>
     </>

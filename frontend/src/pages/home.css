@@ -10,7 +10,7 @@
   padding-top: 1em;
 }
 
-#searchbtn {
+.searchbtn {
   display: flex;
   text-align: center;
   justify-items: center;
