@@ -1,4 +1,3 @@
-import Card from "@components/Cards/Card";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -7,6 +6,8 @@ import "./MovieDetails.css";
 export default function MovieDetails() {
   const { id } = useParams();
   const [movies, setMovies] = useState([]);
+  const [trailerKey, setTrailerKey] = useState("");
+
   useEffect(() => {
     axios
       .get(
@@ -16,6 +17,19 @@ export default function MovieDetails() {
       )
       .then(({ data }) => {
         setMovies(data);
+      });
+    axios
+      .get(
+        `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${
+          import.meta.env.VITE_SECRET_API_KEY
+        }&language=en-US`
+      )
+      .then(({ data }) => {
+        setTrailerKey(
+          data.results.find((film) => {
+            return film.name === "Official Trailer";
+          }).key
+        );
       });
   }, []);
   return (
@@ -56,14 +70,17 @@ export default function MovieDetails() {
           />
           <p className="runtime">Runtime :{movies.runtime}</p>
         </div>
-        <div className="trailer">
-          <img
-            className="trailerLogo pulse"
-            src="../src/assets/bandeAnnonce.svg"
-            alt="logoBandeAnnonce"
+        {trailerKey && (
+          <iframe
+            width="100%"
+            height="315"
+            src={`https://www.youtube.com/embed/${trailerKey}`}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
-          <p className="trailerText ">Trailer</p>
-        </div>
+        )}
       </section>
     </div>
   );

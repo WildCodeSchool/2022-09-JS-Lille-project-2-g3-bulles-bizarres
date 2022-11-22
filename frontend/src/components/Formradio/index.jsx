@@ -98,6 +98,8 @@ export default function Formradio() {
               title={movie.title}
               poster={movie.poster_path}
               overview={movie.overview}
+              hoverable={false}
+              rated={movie.vote_average}
             />
           </Link>
         ))}
