@@ -1,86 +1,68 @@
+.search .card {
+  height: 25vh;
+  width: 30vw;
+  border-radius: 20px;
+}
+
+.search {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+  gap: 0.5rem;
+  height: 60vh;
+  padding-top: 1rem;
+}
 .containerForm {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-row-gap: 3rem;
   padding-top: 4rem;
   width: 100vw;
+  color: #daa622;
 }
 
 .genre {
-  grid-area: 1 / 1 / 2 / 4;
-  background-image: url("../../assets/genre.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 256px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   font-size: 2rem;
   font-family: Bangers;
   text-align: center;
-  padding-top: 2.6rem;
-  padding-right: 1.5rem;
 }
 
 label[for="1"] {
   content: url("../../assets/action.svg");
-  align-self: center;
-  position: relative;
-  left: 1.5rem;
   cursor: pointer;
 }
 label[for="2"] {
   content: url("../../assets/sci-fi.svg");
-  align-self: center;
-  position: relative;
-  left: 2.3rem;
   cursor: pointer;
 }
 label[for="3"] {
   content: url("../../assets/comedy.svg");
-  align-self: center;
-  position: relative;
-  left: 2.5rem;
   cursor: pointer;
 }
 label[for="4"] {
   content: url("../../assets/thriller.svg");
-  align-self: center;
-  position: relative;
-  left: 2.3rem;
   cursor: pointer;
 }
 label[for="5"] {
   content: url("../../assets/police-movie.svg");
-  align-self: center;
-  position: relative;
-  left: 2.2rem;
   cursor: pointer;
 }
 label[for="6"] {
   content: url("../../assets/western.svg");
-  align-self: center;
-  position: relative;
-  left: 3rem;
   cursor: pointer;
 }
 label[for="7"] {
   content: url("../../assets/horror.svg");
-  align-self: center;
-  position: relative;
-  left: 2.5rem;
   cursor: pointer;
 }
 label[for="8"] {
   content: url("../../assets/child-movie.svg");
-  align-self: center;
-  position: relative;
-  left: 2rem;
   cursor: pointer;
 }
 label[for="9"] {
   content: url("../../assets/romantic.svg");
-  align-self: center;
-  position: relative;
-  left: 3rem;
   cursor: pointer;
 }
 
@@ -119,7 +101,7 @@ h2:hover {
 
 button.form-button {
   background-color: #111111;
-  /* background-image: url("../../assets/search-movies.svg"); */
+  background-image: url("../../assets/search-movies.svg");
   background-size: 80px;
   background-repeat: no-repeat;
   font-size: 2.5rem;

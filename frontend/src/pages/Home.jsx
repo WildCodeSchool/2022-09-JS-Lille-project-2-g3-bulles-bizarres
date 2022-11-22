@@ -3,6 +3,7 @@ import Carousel from "@components/Carousel/Carousel";
 import Logo from "@components/Header/Logo/Logo";
 import Titre from "@components/Header/Titre/Titre";
 import SearchButton from "@components/SearchButton";
+import { Link } from "react-router-dom";
 // eslint-enable import/no-unresolved
 
 export default function Home() {
@@ -16,7 +17,9 @@ export default function Home() {
         <Carousel />
       </section>
       <section className="searchbtn">
-        <SearchButton />
+        <Link to="/MobileForm">
+          <SearchButton />
+        </Link>
       </section>
     </body>
   );
