@@ -14,19 +14,28 @@
   padding-top: 1rem;
 }
 .containerForm {
-  padding-top: 4rem;
-  width: 100vw;
-  color: #daa622;
-}
-
-.genre {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 2rem;
-  font-family: Bangers;
-  text-align: center;
+  padding-top: 4rem;
+  width: 100vw;
+  color: #daa622;
+  align-items: center;
+  justify-items: center;
+}
+
+figcaption {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
 }
 
 label[for="1"] {
@@ -66,50 +75,18 @@ label[for="9"] {
   cursor: pointer;
 }
 
-h2 {
-  font-family: "Bangers", cursive;
-  font-size: 1.6rem;
-  height: 2rem;
-  position: relative;
-  top: 80px;
-  right: 35px;
-  padding-top: 1.5rem;
-}
-
 input {
   display: none;
 }
-h2:hover {
+figure:hover {
   color: whitesmoke;
   text-shadow: 1px 3px 30px yellow;
   text-decoration: underline;
 }
 
-.action,
-.sci-fi,
-.comedy,
-.thriller,
-.police-movie,
-.western,
-.horror,
-.child-movie,
-.romantic {
+.cancel {
   display: flex;
-  justify-content: center;
-  height: 7rem;
-}
-
-button.form-button {
-  background-color: #111111;
-  background-image: url("../../assets/search-movies.svg");
-  background-size: 80px;
-  background-repeat: no-repeat;
-  font-size: 2.5rem;
+  justify-content: flex-end;
+  text-decoration: none;
   color: #daa622;
-  font-family: "Bangers", cursive;
-  cursor: pointer;
-  border: none;
-  width: 100vw;
-  height: 6rem;
-  grid-area: 5 / 1 / 6 / 4;
 }

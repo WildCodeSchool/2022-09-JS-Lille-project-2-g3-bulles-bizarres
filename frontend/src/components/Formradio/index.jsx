@@ -70,10 +70,11 @@ export default function Formradio() {
   return (
     <>
       <div className="containerForm">
-        <div className="genre">
-          {radios.map((radio) => (
-            <label htmlFor={radio.id} key={radio.id}>
+        {radios.map((radio) => (
+          <figure>
+            <label htmlFor={radio.id}>
               <input
+                key={radio.id}
                 type="checkbox"
                 id={radio.id}
                 name={radio.name}
@@ -81,16 +82,18 @@ export default function Formradio() {
                 onChange={(e) => setSelectedRadio(e.target.value)}
                 value={radio.genre}
               />
-              <p>{radio.name}</p>
             </label>
-          ))}
-        </div>
-        {selectedRadio && (
+            <figcaption>{radio.name}</figcaption>
+          </figure>
+        ))}
+      </div>
+      {selectedRadio && (
+        <div className="cancel">
           <button type="button" onClick={() => setSelectedRadio("")}>
             Annuler la recherche
           </button>
-        )}
-      </div>
+        </div>
+      )}
       <section className="search">
         {movies.map((movie) => (
           <Link to={`/MovieDetails/${movie.id}`} key={movie.id}>
