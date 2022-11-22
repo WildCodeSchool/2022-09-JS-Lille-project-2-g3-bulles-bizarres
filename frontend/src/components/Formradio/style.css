@@ -14,37 +14,34 @@
   padding-top: 1rem;
 }
 .containerForm {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-row-gap: 3rem; */
-
-  padding-top: 4rem;
-  width: 100vw;
-  color: #daa622;
-}
-
-.genre {
-  /* grid-area: 1 / 1 / 2 / 4; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* background-image: url("../../assets/genre.svg"); */
-  /* background-repeat: no-repeat;
-  background-position: center; */
-  /* background-size: 256px; */
-  justify-content: space-around;
-  font-size: 2rem;
-  font-family: Bangers;
-  text-align: center;
-  /* padding-top: 2.6rem;
-  padding-right: 1.5rem; */
+  padding-top: 4rem;
+  width: 100vw;
+  color: #daa622;
+  align-items: center;
+  justify-items: center;
 }
 
+figcaption {
+  font-family: "Bangers", cursive;
+  font-size: 1.6rem;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
 label[for="1"] {
   content: url("../../assets/action.svg");
-  /* align-self: center;
-  position: relative;
+  align-self: center;
+  /* position: relative;
   left: 1.5rem; */
   cursor: pointer;
 }
@@ -105,7 +102,7 @@ label[for="9"] {
   cursor: pointer;
 }
 
-h2 {
+/* h2 {
   font-family: "Bangers", cursive;
   font-size: 1.6rem;
   height: 2rem;
@@ -113,12 +110,12 @@ h2 {
   top: 80px;
   right: 35px;
   padding-top: 1.5rem;
-}
+} */
 
 input {
   display: none;
 }
-h2:hover {
+figure:hover {
   color: whitesmoke;
   text-shadow: 1px 3px 30px yellow;
   text-decoration: underline;

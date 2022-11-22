@@ -71,8 +71,8 @@ export default function Formradio() {
   return (
     <>
       <div className="containerForm">
-        <div className="genre">
-          {radios.map((radio) => (
+        {radios.map((radio) => (
+          <figure>
             <label htmlFor={radio.id}>
               <input
                 key={radio.id}
@@ -83,17 +83,18 @@ export default function Formradio() {
                 onChange={(e) => setSelectedRadio(e.target.value)}
                 value={radio.genre}
               />
-              <p>{radio.name}</p>
             </label>
-          ))}
-        </div>
+            <figcaption>{radio.name}</figcaption>
+          </figure>
+        ))}
+
         {selectedRadio && (
           <button type="button" onClick={() => setSelectedRadio("")}>
             Annuler la recherche
           </button>
         )}
       </div>
-      <p>Genre :{selectedRadio}</p>
+
       <button type="button" className="form-button" onClick={handleGenre}>
         Search movies
       </button>
