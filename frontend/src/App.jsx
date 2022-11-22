@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import MobileForm from "./pages/MobileForm";
+import MobileForm from "@pages/MobileForm";
 import MobileResponse from "./pages/MobileResponse";
 import Home from "./pages/Home";
 
