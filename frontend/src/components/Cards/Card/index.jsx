@@ -39,9 +39,21 @@ export default function Card({ title, overview, rated, hoverable, poster }) {
 }
 
 Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  overview: PropTypes.string.isRequired,
-  rated: PropTypes.number.isRequired,
-  hoverable: PropTypes.bool.isRequired,
-  poster: PropTypes.string.isRequired,
+  card: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    overview: PropTypes.string.isRequired,
+    rated: PropTypes.number.isRequired,
+    hoverable: PropTypes.bool.isRequired,
+    poster: PropTypes.string.isRequired,
+  }),
+};
+
+Card.defaultProps = {
+  card: {
+    title: "",
+    overview: "",
+    rated: 0,
+    hoverable: false,
+    poster: "",
+  },
 };
