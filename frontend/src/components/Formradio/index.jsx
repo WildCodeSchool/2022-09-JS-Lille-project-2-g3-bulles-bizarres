@@ -90,7 +90,11 @@ export default function Formradio() {
       {selectedRadio && (
         <div className="cancel">
           <button type="button" onClick={() => setSelectedRadio("")}>
-            Annuler la recherche
+            <img
+              className="cancelbtn"
+              src="../src/assets/refresh.svg"
+              alt="cancel"
+            />
           </button>
         </div>
       )}

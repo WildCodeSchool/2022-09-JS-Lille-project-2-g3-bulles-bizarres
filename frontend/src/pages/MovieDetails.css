@@ -12,7 +12,6 @@
   position: absolute;
   z-index: -1;
   filter: brightness(20%);
-  aspect-ratio: 1;
 }
 
 .content {
@@ -37,12 +36,54 @@
 .heading {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 1.2em;
 }
 
 .runtime {
   color: #daa622;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin: 0.5em;
+  font-size: 1.2em;
+}
+
+.runtimeText {
+  margin-bottom: 2em;
+}
+
+.rating .ratedStar {
+  height: 2em;
+  margin-right: 0.5em;
+}
+.date .calendar {
+  height: 2em;
+  margin-right: 0.5em;
+}
+
+.titleMovie {
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-top: 0.8em;
+  text-align: center;
+  color: #daa622;
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.1rem;
+}
+
+.paragraph {
+  font-size: 0.9em;
+  line-height: 120%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.return {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.returnimg {
+  height: 3rem;
 }
