@@ -1,0 +1,48 @@
+.details {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.posterdetails {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(20%);
+  aspect-ratio: 1;
+}
+
+.content {
+  color: #daa622;
+  font-size: 2rem;
+}
+
+.rating {
+  color: #daa622;
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.date {
+  color: #daa622;
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.runtime {
+  color: #daa622;
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}

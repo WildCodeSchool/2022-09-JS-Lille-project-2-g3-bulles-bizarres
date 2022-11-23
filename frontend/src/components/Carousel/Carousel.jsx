@@ -51,6 +51,7 @@ export default function Carousel() {
         <SwiperSlide key={movie.id}>
           {({ isActive }) => (
             <Card
+              id={movie.id}
               title={movie.title}
               overview={movie.overview}
               poster={movie.poster_path}

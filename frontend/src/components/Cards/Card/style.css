@@ -1,4 +1,4 @@
-.poster {
+.posterFront {
   justify-content: center;
 }
 
@@ -22,13 +22,13 @@
   animation-fill-mode: forwards;
 }
 
-.card.hoverable:hover .poster {
+.card.hoverable:hover .posterFront {
   filter: brightness(40%);
 }
 
-.description {
+.descriptionFront {
   position: absolute;
-  color: #f2f39d;
+  color: #daa622;
   font-size: 0.8em;
   opacity: 0;
   display: flex;
@@ -36,7 +36,7 @@
   justify-content: space-between;
 }
 
-.card.hoverable:hover .description {
+.card.hoverable:hover .descriptionFront {
   opacity: 1;
   inset: 10px;
 }
@@ -52,22 +52,22 @@
   }
 }
 
-.ratedText {
+.ratedTextFront {
   font-size: 1.2em;
   margin-left: 0.5em;
 }
 
-.ratedStar {
+.ratedStarFront {
   height: 1em;
 }
 
-.rated {
+.ratedFront {
   display: flex;
   justify-content: flex-end;
   margin: 0.5em;
 }
 
-.titleMovie {
+.titleMovieFront {
   font-size: 1.5em;
   margin-bottom: 1em;
   text-align: center;
@@ -76,12 +76,12 @@
   letter-spacing: 0.1rem;
 }
 
-.paragraph {
+.paragraphFront {
   font-size: 0.9em;
   line-height: 120%;
 }
 
-.trailer {
+.trailerFront {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   display: flex;
@@ -89,17 +89,17 @@
   align-content: flex-end;
 }
 
-.trailerText {
+.trailerTextFront {
   align-self: center;
   margin-left: 0.5em;
-  color: #f2f39d;
+  color: #daa622;
+  text-decoration: none;
+}
+.trailerTextFront:visited {
   color: #daa622;
 }
-.trailerText:visited {
-  color: #f2f39d;
-}
 
-.trailerLogo {
+.trailerLogoFront {
   height: 2em;
   color: blue;
 }

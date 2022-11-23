@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "@components/Cards/Card";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export default function Formradio() {
   const [movies, setMovies] = useState([]);
@@ -54,7 +55,7 @@ export default function Formradio() {
     },
   ];
 
-  const handleGenre = () => {
+  useEffect(() => {
     axios
       .get(
         `https://api.themoviedb.org/3/discover/movie?api_key=${
@@ -64,15 +65,13 @@ export default function Formradio() {
       .then(({ data }) => {
         setMovies(data.results);
       });
-  };
-  useEffect(() => {
-    handleGenre();
-  }, []);
+  }, [selectedRadio]);
+
   return (
     <>
       <div className="containerForm">
-        <div className="genre">
-          {radios.map((radio) => (
+        {radios.map((radio) => (
+          <figure>
             <label htmlFor={radio.id}>
               <input
                 key={radio.id}
@@ -83,23 +82,29 @@ export default function Formradio() {
                 onChange={(e) => setSelectedRadio(e.target.value)}
                 value={radio.genre}
               />
-              <p>{radio.name}</p>
             </label>
-          ))}
-        </div>
-        {selectedRadio && (
+            <figcaption>{radio.name}</figcaption>
+          </figure>
+        ))}
+      </div>
+      {selectedRadio && (
+        <div className="cancel">
           <button type="button" onClick={() => setSelectedRadio("")}>
             Annuler la recherche
           </button>
-        )}
-      </div>
-      <p>Genre :{selectedRadio}</p>
-      <button type="button" className="form-button" onClick={handleGenre}>
-        Search movies
-      </button>
+        </div>
+      )}
       <section className="search">
         {movies.map((movie) => (
-          <Card key={movie.id} title={movie.title} poster={movie.poster_path} />
+          <Link to={`/MovieDetails/${movie.id}`} key={movie.id}>
+            <Card
+              title={movie.title}
+              poster={movie.poster_path}
+              overview={movie.overview}
+              hoverable={false}
+              rated={movie.vote_average}
+            />
+          </Link>
         ))}
       </section>
     </>
