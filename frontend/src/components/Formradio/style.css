@@ -11,7 +11,6 @@
   background-color: #111111;
   gap: 0.5rem;
   height: 60vh;
-  padding-top: 1rem;
 }
 .containerForm {
   display: flex;
@@ -84,9 +83,23 @@ figure:hover {
   text-decoration: underline;
 }
 
-.cancel {
+button {
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
   color: #daa622;
+  background-color: #111111;
+  border: none;
+  height: 5rem;
+}
+
+.cancel {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cancelbtn {
+  height: 3rem;
 }

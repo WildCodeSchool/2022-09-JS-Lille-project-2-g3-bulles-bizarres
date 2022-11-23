@@ -51,24 +51,34 @@ export default function MovieDetails() {
           </div>
           <div className="date">
             <img
-              className="ratedStar"
+              className="calendar"
               src="../src/assets/Calendar.svg"
               alt="calendar"
             />
-            <p className="ratedText">{movies.release_date}</p>
+            <p className="calendarText">{movies.release_date}</p>
           </div>
         </div>
+        <div className="return">
+          <a href="/MobileForm">
+            <img
+              className="returnimg"
+              src="../src/assets/return.svg"
+              alt="return"
+            />
+          </a>
+        </div>
+
         <div className="content">
           <h1 className="titleMovie">{movies.title}</h1>
           <p className="paragraph">{movies.overview}</p>
         </div>
         <div className="runtime">
           <img
-            className="ratedStar"
+            className="runtimeText"
             src="../src/assets/clock.svg"
             alt="clock"
           />
-          <p className="runtime">Runtime :{movies.runtime}</p>
+          <p className="runtimeText">Runtime :{movies.runtime} min</p>
         </div>
         {trailerKey && (
           <iframe
