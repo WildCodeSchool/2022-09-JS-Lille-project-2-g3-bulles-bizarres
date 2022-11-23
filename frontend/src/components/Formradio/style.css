@@ -83,23 +83,16 @@ figure:hover {
   text-decoration: underline;
 }
 
-button {
-  display: flex;
-  justify-content: flex-end;
-  text-decoration: none;
-  color: #daa622;
-  background-color: #111111;
-  border: none;
-  height: 5rem;
-}
-
 .cancel {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .cancelbtn {
   height: 3rem;
+  background-color: #111111;
+  text-decoration: none;
+  border: none;
 }
